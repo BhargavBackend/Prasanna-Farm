@@ -1,0 +1,113 @@
+/* File: RegisterUser.css */
+
+/* Center the container on the page */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #eee6e6; /* Light background color */
+    font-family: Arial, sans-serif;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Container is now narrower and centered */
+  .register-container {
+    width: 350px; /* Reduced the width */
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    animation: slideUp 0.8s ease-in-out;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    animation: slideUp 1s ease-in-out;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #4CAF50;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.6);
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+  }
+  
+  p {
+    text-align: center;
+    color: red;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  input::placeholder {
+    color: #aaa;
+    transition: color 0.3s ease;
+  }
+  
+  input:focus::placeholder {
+    color: #4CAF50;
+  }
+  
+  .message {
+    text-align: center;
+    color: #4CAF50;
+    font-size: 14px;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  

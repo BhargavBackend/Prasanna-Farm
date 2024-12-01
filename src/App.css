@@ -1,0 +1,104 @@
+/* General body styling */
+body {
+  font-family: 'Arial', sans-serif; /* Modern font */
+  background-color: #f0f0f0; /* Light background color */
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for login and register forms */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Card styling for both forms */
+.card {
+  width: 300px; /* Fixed width for consistency */
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff; /* White background for cards */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  position: relative;
+  z-index: 1; /* Keep cards on the same stacking context */
+}
+
+/* Hover effect for both cards */
+.card:hover {
+  transform: scale(1.05); /* Slight scale effect on hover */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Deep shadow on hover */
+}
+
+/* Headings styling */
+h2 {
+  text-align: center; /* Centered heading */
+  margin-bottom: 20px; /* Space below heading */
+  color: #333; /* Darker text color */
+}
+
+/* Input styling */
+input {
+  width: 100%; /* Full width inputs */
+  padding: 12px; /* Increased padding for comfort */
+  margin: 10px 0; /* Vertical spacing */
+  border-radius: 5px; /* Slightly rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  transition: border 0.3s ease; /* Transition for border color */
+}
+
+input:focus {
+  border-color: #007bff; /* Change border color on focus */
+  outline: none; /* Remove default outline */
+}
+
+/* Button styling */
+button {
+  width: 100%; /* Full width button */
+  padding: 12px; /* Padding for button */
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* White text */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Transition for background */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Message styling */
+p {
+  text-align: center; /* Centered text for messages */
+  color: red; /* Red color for error messages */
+  margin-top: 10px; /* Space above */
+}
+
+/* Media Queries for Responsiveness */
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack forms vertically */
+  }
+
+  .card {
+    width: 80%; /* Make cards wider */
+    margin: 10px auto; /* Center the cards */
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 480px) {
+  .card {
+    width: 100%; /* Full width for small screens */
+    margin: 5px 0; /* Adjust margins */
+  }
+}
